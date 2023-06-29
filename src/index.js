@@ -16,3 +16,18 @@ const leaderboardData = [
   },
 ];
 
+const leaderboard = document.getElementById('leaderboard');
+
+const renderLeaderboard = () => {
+  leaderboard.innerHTML = '';
+  leaderboardData.forEach((player) => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <span>${player.name}:</span>
+      <span>${player.score}</span>
+  `;
+    leaderboard.appendChild(li);
+  });
+};
+
+renderLeaderboard();
