@@ -3,11 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leader Board</title>
+  <title>Leaderboard</title>
 
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-  <h1>Come ye saints</h1>
+  <header>
+    <h1>Leaderboard</h1>
+  </header>
+  
+  <main>
+    <section>
+      <div class="scoreHeader">
+        <h2>Recent Scores</h2>
+        <button type="reset">
+          Refresh
+        </button>
+      </div>
+      
+      <div>
+        <ul id="scores">
+          <li>
+            <span>Player 1</span>
+            <span>300</span>
+          </li>
+          <li>
+            <span>Player 2</span>
+            <span>200</span>
+          </li>
+          <li>
+            <span>Player 3</span>
+            <span>100</span>
+          </li>
+          <li>
+            <span>Player 1</span>
+            <span>300</span>
+          </li>
+          <li>
+            <span>Player 2</span>
+            <span>200</span>
+          </li>
+          <li>
+            <span>Player 3</span>
+            <span>100</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2>Add your score</h2>
+      </div>
+
+      <div>
+        <form action="">
+            <input type="text" placeholder="Your name">
+            <input type="number" placeholder="Your Score">
+            <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
