@@ -14,3 +14,9 @@ const render = async () => {
     recentScore.appendChild(listItem);
   });
 };
+
+const renderLeaderboardOnLoad = async () => {
+  await render();
+};
+
+export {render, renderLeaderboardOnLoad};
