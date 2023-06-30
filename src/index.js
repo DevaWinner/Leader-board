@@ -7,3 +7,5 @@ const submitBtn = document.getElementById('submit-btn');
 
 refreshBtn.addEventListener('click', render);
 window.addEventListener('load', renderLeaderboardOnLoad);
+
+submitBtn.addEventListener('click', submitForm);
