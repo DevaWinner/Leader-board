@@ -63,8 +63,9 @@
 ### Key Features <a name="key-features"></a>
 
 - [ ] **Basic layout**
-- [ ] **Dynamically render stored scores**
-- [ ] **Add score**
+- [ ] **Send and display score from API**
+- [ ] **Render scores**
+- [ ] **Ability to add scores**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,7 +117,6 @@ In order to run this project you need:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Send and display score from API**
 - [ ] **Improved Style and looks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
