@@ -19,4 +19,4 @@ const renderLeaderboardOnLoad = async () => {
   await render();
 };
 
-export {render, renderLeaderboardOnLoad};
+export { render, renderLeaderboardOnLoad };
