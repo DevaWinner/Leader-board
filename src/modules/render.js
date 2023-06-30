@@ -1,42 +1,22 @@
-const leaderboardData = [
-  {
-    name: 'Player 1',
-    score: 100,
-  },
-  {
-    name: 'Player 2',
-    score: 200,
-  },
-  {
-    name: 'Player 3',
-    score: 150,
-  },
-  {
-    name: 'Player 4',
-    score: 300,
-  },
-  {
-    name: 'Player 5',
-    score: 250,
-  },
-  {
-    name: 'Player 6',
-    score: 350,
-  },
-];
+import { getData } from './game.js';
 
-const leaderboard = document.getElementById('leaderboard');
-
-const renderLeaderboard = () => {
-  leaderboard.innerHTML = '';
-  leaderboardData.forEach((player) => {
-    const li = document.createElement('li');
-    li.innerHTML = `
-      <span>${player.name}:</span>
-      <span>${player.score}</span>
-  `;
-    leaderboard.appendChild(li);
+const render = async () => {
+  const data = await getData();
+  const recentScore = document.getElementById('leaderboard');
+  recentScore.innerHTML = '';
+  const sortedData = data.sort((a, b) => a.score - b.score);
+  sortedData.forEach((item) => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `
+    <span> ${item.user}: </span>
+    <span> ${item.score} </span>
+    `;
+    recentScore.appendChild(listItem);
   });
 };
 
-export default renderLeaderboard;
+const renderLeaderboardOnLoad = async () => {
+  await render();
+};
+
+export { render, renderLeaderboardOnLoad };

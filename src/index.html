@@ -16,7 +16,7 @@
     <section>
       <div class="scoreHeader">
         <h2>Recent Scores</h2>
-        <button type="reset">
+        <button type="reset" id="refresh-btn">
           Refresh
         </button>
       </div>
@@ -34,10 +34,12 @@
       </div>
 
       <div>
+        
         <form action="">
-            <input type="text" placeholder="Your name">
-            <input type="number" placeholder="Your Score">
-            <button type="submit">Submit</button>
+          <input class="name-input" id="name-input" type="text" placeholder="Your name" required>
+          <input class="score-input" id="score-input" type="number" placeholder="Your score" required>
+          <p id="error-msg"></p>
+          <button type="submit" id="submit-btn">Submit</button>
         </form>
       </div>
     </section>

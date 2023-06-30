@@ -1,4 +1,11 @@
 import './styles/style.css';
-import renderLeaderboard from './modules/render.js';
+import submitForm from './modules/submit.js';
+import { render, renderLeaderboardOnLoad } from './modules/render.js';
 
-renderLeaderboard();
+const refreshBtn = document.getElementById('refresh-btn');
+const submitBtn = document.getElementById('submit-btn');
+
+refreshBtn.addEventListener('click', render);
+window.addEventListener('load', renderLeaderboardOnLoad);
+
+submitBtn.addEventListener('click', submitForm);
