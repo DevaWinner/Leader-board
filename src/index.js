@@ -1,4 +1,3 @@
 import './styles/style.css';
-import renderLeaderboard from './modules/render.js';
-
-renderLeaderboard();
+import submitForm from './modules/submit.js';
+import {render, renderLeaderboardOnLoad} from './modules/render.js';
