@@ -1,6 +1,6 @@
 import { createData } from './game.js';
 
-const submitForm = async e => {
+const submitForm = async (e) => {
   e.preventDefault();
   const nameInput = document.getElementById('name-input');
   const scoreInput = document.getElementById('score-input');
