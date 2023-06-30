@@ -19,3 +19,17 @@ const getData = async () => {
   const data = await response.json();
   return data.result;
 };
+
+const createData = async (data) => {
+  const response = await fetch(`${url}${id}/scores/`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  });
+  const res = await response.json();
+  return res.result;
+};
+
+export { game, getData, createData };
