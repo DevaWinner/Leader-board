@@ -14,3 +14,8 @@ const game = async (name) => {
   return response;
 };
 
+const getData = async () => {
+  const response = await fetch(`${url}${id}/scores/`);
+  const data = await response.json();
+  return data.result;
+};
