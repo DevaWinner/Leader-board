@@ -8,7 +8,7 @@ const render = async () => {
   sortedData.forEach((item) => {
     const listItem = document.createElement('li');
     listItem.innerHTML = `
-    <span> ${item.user}: </span>
+    <span> ${item.user} </span>
     <span> ${item.score} </span>
     `;
     recentScore.appendChild(listItem);
