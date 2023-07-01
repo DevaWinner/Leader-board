@@ -148,3 +148,14 @@ form {
   flex-direction: column;
   gap: 4em;
 }
+
+input {
+  padding: 0.5em 1em;
+  border: none;
+  height: 4em;
+  border-radius: 0.5em;
+}
+
+input:focus {
+  outline: none;
+}
