@@ -89,3 +89,24 @@ li {
   align-items: center;
   padding: 1em;
 }
+
+.board-title {
+  color: var(--white);
+  padding: 0;
+}
+
+.board-title span {
+  background-color: var(--blue);
+  font-weight: 500;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.board-title span:first-child {
+  width: 75%;
+}
+
+.board-title span:last-child {
+  width: 20%;
+}
