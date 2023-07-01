@@ -49,3 +49,18 @@ main {
   justify-content: space-between;
   padding: 0 8em;
 }
+
+.board-container,
+.input-container {
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.board-header {
+  gap: 2em;
+}
+
+.board-header h2 {
+  font-size: 2rem;
+  color: var(--blue);
+}
