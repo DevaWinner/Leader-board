@@ -142,3 +142,9 @@ button {
   font-size: 2rem; 
   color: var(--white);
 }
+
+form {
+  margin-top: 3.5em;
+  flex-direction: column;
+  gap: 4em;
+}
