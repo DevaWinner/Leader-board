@@ -78,3 +78,14 @@ main {
   background-color: var(--white);
   color: var(--blue);
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
