@@ -122,3 +122,23 @@ li {
 #leaderboard::-webkit-scrollbar {
   width: 0.5em;
 }
+
+button {
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.input-container {
+  align-items: center;
+  background-color: var(--blue);
+  padding: 1.5em;
+  border-radius: 0.5em;
+  height: 33.5em;
+}
+
+.input-header h2 {
+  font-size: 2rem; 
+  color: var(--white);
+}
