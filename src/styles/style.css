@@ -36,8 +36,7 @@ main {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
   width: 70vw;
   height: 70vh;
-  background-color: #e5e5f7;
-  background-image: linear-gradient(45deg, #ffffff 50%, #e5e5f7 50%);
+  background-image: linear-gradient(45deg, #fff 50%, #e5e5f7 50%);
   background-size: 8px 8px;
 }
 
@@ -97,7 +96,6 @@ li {
 
 .board-title span {
   background-color: var(--blue);
-  font-weight: 500;
   padding: 0.5em;
   border-radius: 0.5em;
   text-align: center;
