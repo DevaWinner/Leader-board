@@ -159,3 +159,14 @@ input {
 input:focus {
   outline: none;
 }
+
+.submit-btn {
+  font-size: 1.2rem;
+  padding: 1em;
+  background-color: var(--yellow);
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--blue);
+}
