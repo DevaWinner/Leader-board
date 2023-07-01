@@ -110,3 +110,15 @@ li {
 .board-title span:last-child {
   width: 20%;
 }
+
+#leaderboard {
+  height: calc(58vh - 150px);
+  width: 40em;
+  overflow: auto;
+  background-color: var(--blue);
+  border-radius: 0.5em;
+}
+
+#leaderboard::-webkit-scrollbar {
+  width: 0.5em;
+}
