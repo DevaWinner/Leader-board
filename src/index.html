@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+  <main class="flex">
+    <section class="heading">
+      <h1>Leaderboard</h1>
+    </section>
+
+    <section class="flex board">
+      <div class="board-container flex">
+
+        <div class="board-header flex">
+          <h2> Recent Scores </h2>
+          <button type="reset" id="refresh-btn" class="refresh-btn"> Refresh </button>
+        </div>
+        
+        <ul>
+          <li class="board-title">
+            <span>Name</span>
+            <span>Score</span>
+          </li>
+        </ul>
+
+        <ul id="leaderboard" class="leaderboard"></ul>
+
+      </div>
+
+      <div class="input-container flex">
+
+        <div class="input-header">
+          <h2>Add your score</h2>
+        </div>
+
+        <form action="" class="flex">
+          <input class="name-input" id="name-input" type="text" placeholder="Your name" required>
+          <input class="score-input" id="score-input" type="number" placeholder="Your score" required>
+          <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
