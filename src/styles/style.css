@@ -27,6 +27,7 @@ body {
 }
 
 main {
+  margin: auto;
   padding: 1em;
   flex-direction: column;
   gap: 2em;
