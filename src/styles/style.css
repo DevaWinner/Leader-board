@@ -7,3 +7,10 @@
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+:root {
+  --blue: #2a3c7f;
+  --green: #2cca7e;
+  --yellow: #f1fd82;
+  --white: #fff;
+}
