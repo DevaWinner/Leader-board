@@ -14,3 +14,14 @@ html {
   --yellow: #f1fd82;
   --white: #fff;
 }
+
+.flex {
+  display: flex;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  padding: 7.5em 5em;
+  background-color: var(--blue);
+}
